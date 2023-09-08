@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'instana.instrumentation.django.middleware.InstanaMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
